@@ -1,0 +1,74 @@
+(+)
+
+(+ (* 5 2) -)
+
+(print-num 1)
+(print-num 2)
+(print-num 3)
+(print-num 4)
+
+(print-num 0)
+(print-num -123)
+(print-num 456)
+
+(+ 1 2 3)
+(* 4 5 6)
+
+(print-num (+ 1 (+ 2 3 4) (* 4 5 6) (/ 8 3) (mod 10 3)))
+
+(print-num (mod 10 4))
+
+(print-num (- (+ 1 2) 4))
+
+(print-num -256)
+
+(print-num (mod 10 (+ 1 2)))
+
+(print-num (* (/ 1 2) 4))
+
+(print-num (- (+ 1 2 3 (- 4 5) 6 (/ 7 8) (mod 9 10))
+              11))
+
+
+(print-bool #t)
+(print-bool #f)
+
+(print-bool (and #t #f))
+(print-bool (and #t #t))
+
+(print-bool (or #t #f))
+(print-bool (or #f #f))
+
+(print-bool (not #t))
+(print-bool (not #f))
+
+(print-bool (or #t #t #f))
+(print-bool (or #f (and #f #t) (not #f)))
+(print-bool (and #t (not #f) (or #f #t) (and #t (not #t))))
+
+(print-num (if #t 1 2))
+
+(print-num (if #f 1 2))
+
+(print-num (if (< 1 2) (+ 1 2 3) (* 1 2 3 4 5)))
+
+(print-num (if (= 9 (* 2 5))
+               0
+               (if #t 1 2)))
+
+(define x 1)
+
+(print-num x)
+
+(define y (+ 1 2 3))
+
+(print-num y)
+
+(define a (* 1 2 3 4))
+
+(define b (+ 10 -5 -2 -1))
+
+(print-num (+ a b))
+
+
+
